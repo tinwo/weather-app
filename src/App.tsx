@@ -4,6 +4,7 @@ function App() {
 
   return (
     <>
+      <p>Weather React App</p>
     </>
   )
 }
