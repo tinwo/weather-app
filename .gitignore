@@ -27,3 +27,6 @@ build
 coverage
 public
 *.md
+
+.env
+.env.local,

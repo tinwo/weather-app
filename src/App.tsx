@@ -1,12 +1,18 @@
-import './App.css'
+import './App.css';
+
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+
+// Components
+import { WeatherDashboard } from './components/WeatherDashboard/WeatherDashboard.tsx';
+
+const queryClient = new QueryClient();
 
 function App() {
-
   return (
-    <>
-      <p>Weather React App</p>
-    </>
-  )
+    <QueryClientProvider client={queryClient}>
+      <WeatherDashboard city={'Kyiv'}></WeatherDashboard>
+    </QueryClientProvider>
+  );
 }
 
-export default App
+export default App;
